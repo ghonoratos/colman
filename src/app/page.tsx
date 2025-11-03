@@ -1,5 +1,5 @@
 import { About } from "@/components/about";
-import { Header } from "@/components/header";
+import { Contact } from "@/components/contact";
 import { Hero } from "@/components/hero";
 import { Services } from "@/components/services";
 import { Testimonials } from "@/components/testimonials";
@@ -7,11 +7,11 @@ import { Testimonials } from "@/components/testimonials";
 export default function Home() {
   return (
     <>
-      <Header />
       <Hero />
       <Services />
       <Testimonials />
       <About />
+      <Contact />
     </>
   );
 }

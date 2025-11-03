@@ -87,18 +87,18 @@ export const Testimonials = () => {
   return (
     <section
       id="reviews"
-      className="min-h-svh flex flex-col bg-white dark:bg-zinc-700 py-32"
+      className="min-h-svh flex flex-col bg-white py-12 scroll-mt-32 snap-mandatory "
     >
       <div className="container flex flex-col flex-1 mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-5xl fade-in-scroll font-bold mb-6 text-gray-700 dark:text-white">
-          Veja o que nossos clientes <br /> estão falando sobre nós
+        <h2 className="text-3xl md:text-5xl lg:max-w-[70%] mx-auto fade-in-scroll font-bold mb-6 text-gray-700">
+          Veja o que nossos clientes estão falando sobre nós
         </h2>
-        <p className="text-lg md:text-xl fade-in-scroll text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
-          Da primeira visita ao último ajuste, entregamos soluções que realmente{" "}
-          <br /> funcionam — e que nossos clientes recomendam.
+        <p className="lg:text-lg md:text-xl lg:max-w-[70%] mx-auto fade-in-scroll text-gray-600 mb-8 leading-relaxed">
+          Da primeira visita ao último ajuste, entregamos soluções que realmente
+          funcionam — e que nossos clientes recomendam.
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+        <div className="grid md:grid-cols-3 xl:grid-cols-4 gap-4 mt-12">
           {testimonials.map((testimonialColumn, index) => (
             <div
               style={
@@ -107,7 +107,7 @@ export const Testimonials = () => {
                 } as React.CSSProperties
               }
               key={index}
-              className={`grid fade-in-testimonials translate-y-${Number(
+              className={`grid  md:nth-last-[4n]:hidden xl:nth-last-[4n]:grid fade-in-testimonials translate-y-${Number(
                 index * 4
               )} gap-4`}
             >
@@ -119,12 +119,12 @@ export const Testimonials = () => {
                       "--_fade-in-cover": `${index * 10 + 30 + idx * 5}%`,
                     } as React.CSSProperties
                   }
-                  className="bg-white border-2 fade-in-scroll border-zinc-50 shadow-lg dark:bg-zinc-800 p-6 rounded-lg h-full flex flex-col text-left"
+                  className="bg-white border-2 fade-in-scroll border-zinc-50 shadow-lg p-6 rounded-lg h-full flex flex-col text-left"
                 >
-                  <h3 className="text-lg font-bold text-gray-700 dark:text-white mb-4">
+                  <h3 className="text-lg font-bold text-gray-700 mb-4">
                     {testimonial.name}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300 flex-1">
+                  <p className="text-gray-600 flex-1">
                     "{testimonial.feedback}"
                   </p>
                   <div className="mt-4">
