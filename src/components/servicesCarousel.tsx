@@ -94,7 +94,7 @@ export const ServicesCarousel = () => {
             slidesPerView: 1.4,
           },
         }}
-        autoplay={false}
+        autoplay={true}
         navigation={{
           prevEl: ".custom-prev",
           nextEl: ".custom-next",
