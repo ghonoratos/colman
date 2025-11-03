@@ -71,7 +71,7 @@ export const Contact = () => {
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center md:items-start gap-8 overflow-clip">
           <div className="text-center w-full lg:text-left lg:w-7/12">
-            <h2 className="text-3xl md:text-5xl lg:max-w-[70%] mx-auto fade-in-scroll font-bold mb-6 text-gray-700">
+            <h2 className="text-3xl md:text-5xl lg:max-w-[70%] lg:mx-0 mx-auto fade-in-scroll font-bold mb-6 text-gray-700">
               Seu conforto começa com um bom serviço
             </h2>
             <p className="lg:text-lg text-gray-600 slide-left leading-relaxed lg:max-w-[80%]">
@@ -181,7 +181,7 @@ export const Contact = () => {
                     <input
                       id="policy"
                       name="policy"
-                      className="accent-primary w-[16px] h-[16px]"
+                      className="accent-primary w-4 h-4"
                       type="checkbox"
                       checked={field.value}
                       onChange={(e) => field.onChange(e.target.checked)}

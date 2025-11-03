@@ -110,7 +110,7 @@ export const ServicesCarousel = () => {
                   alt={service.title}
                   width={400}
                   height={300}
-                  className="object-cover mt-auto lg:mt-0 rounded-lg w-full xl:w-[300px] 2xl:w-[400px] flex-shrink-0"
+                  className="object-cover mt-auto lg:mt-0 rounded-lg w-full xl:w-[300px] 2xl:w-[400px] shrink-0"
                 ></Image>
                 <div>
                   <h3 className="text-2xl xl:text-3xl leading-8 mb-2 font-bold text-gray-700">
@@ -132,7 +132,7 @@ export const ServicesCarousel = () => {
         <div className="custom-prev hidden lg:flex lg:left-2 relative cursor-pointer bg-primary hover:bg-primary/85 transition-[background-color] duration-200 text-white rounded-lg w-10 h-10 items-center justify-center">
           <CaretLeftIcon size={24} weight="bold" />
         </div>
-        <div className="custom-next hidden lg:flex lg:right-2 relative cursor-pointer bg-primary hover:bg-primary/85 transition-[background-color] duration-200 text-white rounded-lg w-10 h-10 flex items-center justify-center">
+        <div className="custom-next hidden lg:flex lg:right-2 relative cursor-pointer bg-primary hover:bg-primary/85 transition-[background-color] duration-200 text-white rounded-lg w-10 h-10 items-center justify-center">
           <CaretRightIcon size={24} weight="bold" />
         </div>
       </div>
