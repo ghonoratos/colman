@@ -87,11 +87,12 @@ export const ServicesCarousel = () => {
     <div className="relative slide-right">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
-        spaceBetween={48}
-        slidesPerView={1}
+        spaceBetween={16}
+        slidesPerView={1.2}
         breakpoints={{
           1024: {
             slidesPerView: 1.4,
+            spaceBetween: 40,
           },
         }}
         autoplay={true}
